@@ -20,7 +20,7 @@ const map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/joshtilley/cjqhg28uz0bv42tpa3stlk1j9',
   center: [1.132099, 51.192950],
-  zoom: 8.8
+  zoom: 8
 });
 map.on('click', function(e) {
   var features = map.queryRenderedFeatures(e.point, {
