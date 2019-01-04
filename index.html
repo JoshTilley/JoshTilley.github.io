@@ -32,7 +32,7 @@ map.on('click', function(e) {
   var feature = features[0];
   var popup = new mapboxgl.Popup({ offset: [0, -15] })
     .setLngLat(feature.geometry.coordinates)
-    .setHTML('<h3><a href="' + feature.properties.url + '"target="_top">' + feature.properties.title + '</a></h3><p>' + feature.properties.description + '</p>')
+    .setHTML('<h3><a href="' + feature.properties.url + '"target="_parent">' + feature.properties.title + '</a></h3><p>' + feature.properties.description + '</p>')
     .setLngLat(feature.geometry.coordinates)
     .addTo(map);
 });
